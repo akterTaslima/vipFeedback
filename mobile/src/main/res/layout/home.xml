@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:orientation="vertical"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp" tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/string_enter_pid" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editPid" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/string_choose_scenario" />
+
+
+    <CheckBox
+        android:text="Restaurant/Cofee Shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkRestaurant" />
+
+    <CheckBox
+        android:text="Grocery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkGrocery" />
+
+    <CheckBox
+        android:id="@+id/chkDoctors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Doctors Office" />
+
+        <CheckBox
+            android:text="Transit/Walking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/chkTransit" />
+
+        <CheckBox
+            android:text="ATM Booth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/chkATM" />
+
+        <CheckBox
+            android:text="Office"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/chkOfc" />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_register"
+            android:id="@+id/buttonRegister"
+            android:onClick="register" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_sync"
+            android:id="@+id/buttonSync"
+            android:onClick="sync" />
+
+    </LinearLayout>
